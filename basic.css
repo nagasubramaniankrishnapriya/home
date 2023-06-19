@@ -1,0 +1,149 @@
+/* CSS File */
+
+/*General CSS for basic tags, such as body, table, etc.*/ 
+* {
+	box-sizing: border-box;
+}
+/* Background Image for all websites */
+body {
+	background-image: url("Images/blueStripe.png");
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-size: cover; 
+}
+
+table,  th, td {
+	border: 3px solid;
+	border-style: groove;
+}
+
+h2, h3 {
+	color: rgb(108, 188, 235);
+}
+
+iframe {
+	width: 100%;
+}
+
+/*Specifically for the table on job info, as none of the rules should clash with that of 
+tables in sea_animals.html */ 
+#specialTables { 
+	background-color: white; 
+	border: 3px solid; 
+	height: 700px;
+	width: 100%;
+	font-family: Verdana;
+}
+
+th, tr, td {
+	color: rgb(122, 166, 191);
+}
+
+/*Declares the format for every page */ 
+.header {
+	background-color: #ADD8E6;
+  	padding: 15px;
+  	color: White;
+}
+
+.content { 
+	background-color: white;
+	font-size: 18px;
+	width: 75%;
+}
+
+/*Two special images who have relative and absolute heights and widths*/
+.img-special {
+ 	width: 400px;
+ 	height: 500px;
+}
+
+img-special2 {
+	width: 50%;
+}
+
+/*Images that will be to the left or right of text.*/ 
+.img-left {
+  float: left;
+  padding: 0px 8px 0px 0px;
+}
+
+/*When hovered over, the image gets smaller. */ 
+.img-left:hover {
+	transform: scale(0.9);
+	transition: transform 0.3s;
+}
+
+.img-right {
+	float: right; 
+	padding: 0px 0px 0px 8px;
+}
+
+.img-right:hover {
+	transform: scale(0.9);
+	transition: transform 0.3s;
+}
+
+/*For image credits under each image*/ 
+.image-credit {
+	text-align: center;
+	font-size: 13px;
+}
+
+/*Declares all CSS needed for navigation bar*/ 
+.column {
+	float: left;
+	padding: 15px;
+}
+
+.fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.navigation {
+	background: white;
+	padding: 10px;
+	width: 20%
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li { 
+	font-size: 17px;
+  	padding: 8px;
+ 	margin-bottom: 8px;
+  	background-color: lightBlue;
+  	color: Blue;
+}
+
+.navigation li:hover {
+  background-color: #0099cc;
+}
+
+li a {
+	display: block;
+  	color: black;
+	text-decoration: none;
+}
+/*For all table data that are in this specific table. */ 
+.img-right, .img-left td {
+	font-size: 13px;
+}
+
+/*Special Fun Fact*/ 
+.fun-fact {
+	border: 5px solid Lightblue;
+	border-radius: 10px;
+	border-style: groove;
+}
+
+/*Used for the references page */ 
+.references {
+	font-size: 20px;
+}
